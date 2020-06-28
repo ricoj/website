@@ -16,7 +16,8 @@
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  m=s.getElementsByTagNdocument,'script','https://www.google-analytics.com/analytics.js','ga');
+ame(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 		  ga('create', 'UA-89163868-1', 'auto');
@@ -33,118 +34,487 @@
 						<div class="inner">
 
 							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>Rico Jonschkowski:</strong> AI = robotics + machine learning</a>
-									<ul class="icons">
-										<li><a href="mailto:Rico%20Jonschkowski%20%3Cxrjoxnx@googxle.cxom%3E" onmouseover="this.href=this.href.replace(/x/g,'');" class="icon fa-envelope fa-lg"><span class="label">Email</span></a></li>
-										<li><a href="https://scholar.google.com/citations?user=5ErX8dMAAAAJ&hl=en" class="icon fa-graduation-cap fa-lg"><span class="label">Google Scholar</span></a></li>
-									</ul>
-								</header>
+							<header id="header">
+								<p class="logo"><strong>Rico Jonschkowski</strong></p>
+								<ul class="icons">
+									<li><a href="https://twitter.com/rico_jski" target="_blank"
+										   class="icon fa-twitter fa-lg"><span class="label">Twitter</span></a></li>
+									<li><a href="https://scholar.google.com/citations?user=5ErX8dMAAAAJ&hl=en"
+										   target="_blank" class="icon fa-graduation-cap fa-lg"><span class="label">Google Scholar</span></a>
+									</li>
+									<li><a href="https://research.google/people/RicoJonschkowski/" target="_blank"
+										   class="icon fa-google fa-lg"><span class="label">Google Research</span></a>
+									</li>
+									<li><a href="mailto:Rico%20Jonschkowski%20%3Cxrjoxnx@googxle.cxom%3E"
+										   onmouseover="this.href=this.href.replace(/x/g,'');"
+										   class="icon fa-envelope fa-lg"><span class="label">Email</span></a></li>
+								</ul>
+							</header>
 
 							<!-- Banner -->
 								<section id="banner">
 									<div class="content">
 										<header>
-											<h1>Hi, I’m Rico</h1>
-											<p>research scientist<br />in robotics and machine learning</p>
+											<p><strong>Hi, I’m Rico,<br/>research scientist</strong> in robotics,
+												machine learning, and computer vision.</p>
 										</header>
-										<p>Of all the wonderous things that surround us, I am most fascinated by intelligence. What is it and&mdash;maybe more importantly&mdash;how does it work? I believe that the most promising approach to answer these questions is artificial intelligence (AI): building and studying artificial systems that exhibit aspects of intelligence. For this quest to AI, robotics is paramount as it defines the problem space and explores solutions for intelligent behavior in the real world. Machine learning is equally important as it strives for generality, replacing human problem solving with automatic learning from data. In my reserach, I integrate ideas from both fields in order to better understand intelligence.</p>
-										<ul class="actions">
-											<li><a href="#content" class="button slow">Learn More</a></li>
-										</ul>
+										<p><strong>My research focuses on learnable perception that enables
+											action</strong>. Below, I've clustered a publications (with code, videos,
+											etc.) by research themes:
+											<a href="#unsupervised_computer_vision">unsupervised computer vision</a>,
+											<a href="#algorithmic_priors">algorithmic priors</a>,
+											<a href="#state_representation_learning">state representation learning</a>,
+											and our robotic system for the <a href="#amazon_picking_challenge">Amazon
+												Picking Challenge</a>.
+											For most recent papers, please check <a
+													href="https://scholar.google.com/citations?user=5ErX8dMAAAAJ&hl=en"
+													target="_blank">google scholar</a>
+											or follow me on <a href="https://twitter.com/rico_jski" target="_blank">twitter</a>.
+											If you are looking for my cv, that's at the <a href="#curriculum_vitae">bottom</a>
+											of this site. And here is my
+											<a href="mailto:Rico%20Jonschkowski%20%3Cxrjoxnx@googxle.cxom%3E"
+											   onmouseover="this.href=this.href.replace(/x/g,'');">email</a>.
+										</p>
 									</div>
 									<span class="image object">
-										<img src="images/portrait.jpg" alt=""/>
+										<img src="images/portrait.png" alt=""/>
 									</span>
 								</section>
-
 							<!-- Section -->
-								<section id="content">
-									<header class="major">
-										<h2>What are you looking for?</h2>
-									</header>
-									<div class="features">
-										<article>
-                                            <a href="publications.html" class="icon fa-rocket"></a>
-											<div class="content">
-												<h3><a href="publications.html">Talks and Publications</a></h3>
-												<p> Talks and all publications together with short summaries, <b>videos</b>, <b>code</b>, etc.</p>
-											</div>
-										</article>
-                                        <article>
-                                            <a href="cv.html" class="icon fa-history"></a>
-											<div class="content">
-												<h3><a href="cv.html">Curriculum Vitae</a></h3>
-												<p>CV, awards, organized events, etc.</p>
-											</div>
-										</article>
-                                        <article>
-                                            <a href="blog.html" class="icon fa-paper-plane"></a>
-											<div class="content">
-												<h3><a href="blog.html">Blog (soon)</a></h3>
-												<p></p>
-											</div>
-										</article>
+							<section id="unsupervised_computer_vision">
+								<h1>Selected Publications by Topic</h1>
+								<h2>Unsupervised Computer Vision</h2>
+								<div class="row">
+									<div class="0.5u 12u$(small)"><p></p></div>
+									<div class="8u 12u$(small)">
+										<p>Rico Jonschkowski, Austin Stone, Jonathan T. Barron, Ariel Gordon, Kurt
+											Konolige, and Anelia Angelova. <strong>What Matters in Unsupervised Optical
+												Flow</strong>. arXiv:2006.04902, 2020.
+											<i><b><a target="_blank"
+													 href="https://github.com/google-research/google-research/tree/master/uflow">Code</a></b>,
+												<a target="_blank" href="https://arxiv.org/pdf/2006.04902.pdf">PDF</a>,
+												<a target="_blank"
+												   href="https://research.google/pubs/pub49244/">BibTeX</a></i></p>
+										<p><i>TL;DR: A thorough study into the core components of unsupervised optical
+											flow produces in a simple method that sets a new state of the art</i></p>
 									</div>
-								</section>
-
-							<!-- Section -->
-								<!--section>
-									<header class="major">
-										<h2>Ipsum sed dolor</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<h3>Interdum aenean</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<h3>Nulla amet dolore</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<h3>Tempus ullamcorper</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3>Sed etiam facilis</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3>Feugiat lorem aenean</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3>Amet varius aliquam</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
+									<div class="3u$ 12u$(small)" align="center">
+										<span class="image object"><img src="images/uflow_small.png" alt=""/></span>
 									</div>
-								</section-->
+								</div>
+								<hr class="major"/>
+								<div class="row">
+									<div class="0.5u 12u$(small)"><p></p></div>
+									<div class="8u 12u$(small)">
+										<p>Rico Jonschkowski and Austin Stone. <strong>Towards Object Detection from
+											Motion</strong>. NeurIPS Workshop on Robot Learning: Control and Interaction
+											in the Real World, 2019.
+											<i><a target="_blank" href="https://arxiv.org/pdf/1909.12950.pdf">PDF</a>,
+												<a target="_blank"
+												   href="https://research.google/pubs/pub49157/">BibTeX</a></i></p>
+										<p><i>TL;DR: A method for learning to detect objects from a few minutes of video
+											without image annotations</i></p>
+									</div>
+									<div class="3u$ 12u$(small)" align="center">
+										<!--<span class="image object"><img src="images/2016_iros.png" alt=""/></span>-->
+										<iframe width="380" height="220" allowfullscreen="allowfullscreen"
+												mozallowfullscreen="mozallowfullscreen"
+												msallowfullscreen="msallowfullscreen"
+												oallowfullscreen="oallowfullscreen"
+												webkitallowfullscreen="webkitallowfullscreen"
+												src="https://youtube.com/embed/BH0Hv3zZG_4">
+										</iframe>
+									</div>
+								</div>
+							</section>
+							<section id="algorithmic_priors">
+								<h2>Algorithmic Priors</h2>
+								<div class="row">
+									<div class="0.5u 12u$(small)"><p></p></div>
+									<div class="8u 12u$(small)">
+										<p>Peter Karkus, Anelia Angelova, Vincent Vanhoucke, and Rico Jonschkowski.
+											<strong>Differentiable Mapping Networks: Learning Structured Map
+												Representations for Sparse Visual Localization</strong>.
+											arXiv:2005.09530, 2020.
+											<i><a target="_blank" href="https://arxiv.org/pdf/2005.09530.pdf">PDF</a>,
+												<a target="_blank"
+												   href="https://research.google/pubs/pub48994/">BibTeX</a></i></p>
+										<p><i>TL;DR: combining spatial structure and end-to-end learning for mapping and
+											localization</i></p>
+									</div>
+									<div class="3u$ 12u$(small)" align="center">
+										<span class="image object"><img src="images/differentiable_mapping.png" alt=""/></span>
+									</div>
+								</div>
+								<hr class="major"/>
+								<div class="row" id="rss17_ws">
+									<div class="0.5u 12u$(small)"><p></p></div>
+									<div class="8u 12u$(small)">
+										<p>Rico Jonschkowski, Divyam Rastogi, and Oliver Brock. <strong>Differentiable
+											Particle Filters: End-to-End Learning with Algorithmic Priors</strong>.
+											Proceedings of Robotics: Science and Systems, 2018.
+											<i><a target="_blank"
+												  href="http://www.roboticsproceedings.org/rss14/p01.pdf">PDF</a>,
+												<a href="http://www.roboticsproceedings.org/rss14/p01.html"
+												   target="_blank">BibTeX</a></i></p>
+										<p><i>TL;DR: the particle filter structure encoded in a recurrent deep
+											network</i></p>
+									</div>
+									<div class="3u$ 12u$(small)" align="center">
+										<span class="image object"><img src="images/2018_rss.png" alt=""/></span>
+									</div>
+								</div>
+								<hr class="major"/>
+								<div class="row">
+									<div class="0.5u 12u$(small)"><p></p></div>
+									<div class="8u 12u$(small)">
+										<p>Rico Jonschkowski and Oliver Brock. <strong>End-To-End Learnable Histogram
+											Filters</strong>. Workshop on Deep Learning for Action and Interaction at
+											NeurIPS, 2016. <i><a target="_blank"
+																 href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/Jonschkowski-16-NIPS-WS.pdf">PDF</a>,
+												<a href="https://www.robotics.tu-berlin.de/menue/research/previous/representation_learning/?no_cache=1&tx_sibibtex_pi1%5Bdownload_bibtex_uid%5D=1272834&tx_sibibtex_pi1%5Bcontentelement%5D=tt_content%3A613729">BibTeX</a>,
+												(extension of the paper below)</i></p>
+										<p>Rico Jonschkowski and Oliver Brock. <strong>Towards Combining Robotic
+											Algorithms and Machine Learning: End-To-End Learnable Histogram
+											Filters</strong>. Workshop on Machine Learning Methods for High-Level
+											Cognitive Capabilities in Robotics at IROS, 2016. <i><a target="_blank"
+																									href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/Jonschkowski-16-IROS_WS.pdf">PDF</a>,
+												<a href="https://www.robotics.tu-berlin.de/menue/research/previous/representation_learning/?no_cache=1&tx_sibibtex_pi1%5Bdownload_bibtex_uid%5D=1253983&tx_sibibtex_pi1%5Bcontentelement%5D=tt_content%3A613729">BibTeX</a>,
+												(preliminary version, see extended version above)</i></p>
+										<p><i>TL;DR: a way to combine the algorithmic structure of Bayes filters with
+											the end-to-end learnability of neural networks</i></p>
+									</div>
+									<div class="3u$ 12u$(small)" align="center">
+										<span class="image object"><img src="images/2017_iclr.png" alt=""/></span>
+									</div>
+								</div>
+							</section>
+							<section id="state_representation_learning">
+								<h2>State Representation Learning</h2>
+								<div class="row" id="rss17_ws">
+									<div class="0.5u 12u$(small)"><p></p></div>
+									<div class="8u 12u$(small)">
+										<p>Rico Jonschkowski, Roland Hafner, Jonathan Scholz, and Martin Riedmiller.
+											<strong>PVEs: Position-Velocity Encoders for Unsupervised Learning of
+												Structured State Representations</strong>. New Frontiers for Deep
+											Learning in Robotics Workshop at RSS, 2017.
+											<i><a target="_blank" href="https://arxiv.org/pdf/1705.09805.pdf">PDF</a>,
+												<a href="https://www.robotics.tu-berlin.de/menue/research/previous/representation_learning/?no_cache=1&tx_sibibtex_pi1%5Bdownload_bibtex_uid%5D=1320562&tx_sibibtex_pi1%5Bcontentelement%5D=tt_content%3A613729">BibTeX</a>,
+												<strong>Paper Award winner</strong></i></p>
+										<p><i>TL;DR: unsupervised learning of where things are and how they are
+											moving</i></p>
+									</div>
+									<div class="3u$ 12u$(small)" align="center">
+										<span class="image object"><img src="images/2017_rss_ws.png" alt=""/></span>
+									</div>
+								</div>
+								<hr class="major"/>
+								<div class="row">
+									<div class="0.5u 12u$(small)"><p></p></div>
+									<div class="8u 12u$(small)">
+										<p>Sebastian Höfer, Antonin Raffin, Rico Jonschkowski, Oliver Brock, and Freek
+											Stulp. <strong>Unsupervised Learning of State Representations for Multiple
+												Tasks</strong>. Workshop on Deep Learning for Action and Interaction at
+											NeurIPS, 2016.
+											<i><a target="_blank"
+												  href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/Hoefer-16-NIPSWS.pdf">PDF</a>,
+												<a href="https://www.robotics.tu-berlin.de/menue/research/previous/representation_learning/?no_cache=1&tx_sibibtex_pi1%5Bdownload_bibtex_uid%5D=1384569&tx_sibibtex_pi1%5Bcontentelement%5D=tt_content%3A613729">BibTeX</a></i>
+										</p>
+										<p><i>TL;DR: a learning method for automatic detection of multiple reinforcement
+											tasks and extraction of state representations from raw observations</i></p>
+									</div>
+									<div class="3u$ 12u$(small)" align="center">
+										<span class="image object"><img src="images/2016_nips_ws.png" alt=""/></span>
+									</div>
+								</div>
+								<hr class="major"/>
+								<div class="row">
+									<div class="0.5u 12u$(small)"><p></p></div>
+									<div class="8u 12u$(small)">
+										<p>Rico Jonschkowski and Oliver Brock. <strong>Learning State Representations
+											with Robotic Priors</strong>. Autonomous Robots. Springer US 39(3):407-428,
+											2015.
+											<i><b><a
+													href="http://github.com/tu-rbo/learning-state-representations-with-robotic-priors"
+													target="_blank">Code</a></b>,
+												<b><a href="https://www.youtube.com/watch?v=BolevVGJk18"
+													  target="_blank">Video of Robot Experiment</a></b>,
+												<a target="_blank"
+												   href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/Jonschkowski-15-AURO.pdf">PDF</a>,
+												<a href="https://www.robotics.tu-berlin.de/menue/research/previous/representation_learning/?no_cache=1&tx_sibibtex_pi1%5Bdownload_bibtex_uid%5D=910818&tx_sibibtex_pi1%5Bcontentelement%5D=tt_content%3A613729">BibTeX</a>,
+												(extension of the two papers below)
+											</i></p>
+										<p>Rico Jonschkowski and Oliver Brock. <strong>State Representation Learning in
+											Robotics: Using Prior Knowledge about Physical Interaction</strong>.
+											Proceedings of Robotics: Science and Systems, 2014.
+											<i><b><a
+													href="https://www.youtube.com/watch?list=PLQfJDb-c2bxEkXdlX7Y6sIN2ofSS4f4mW&feature=player_detailpage&v=RS20i36p3IM#t=287"
+													target="_blank">Talk</a></b>,
+												<a target="_blank"
+												   href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/Jonschkowski-14-RSS.pdf">PDF</a>,
+												<a href="https://www.robotics.tu-berlin.de/menue/research/previous/representation_learning/?no_cache=1&tx_sibibtex_pi1%5Bdownload_bibtex_uid%5D=649722&tx_sibibtex_pi1%5Bcontentelement%5D=tt_content%3A613729">BibTeX</a>,
+												(preliminary version, see extended version above)
+											</i></p>
+										<p>Rico Jonschkowski and Oliver Brock. <strong>Learning Task-Specific State
+											Representations by Maximizing Slowness and Predictability</strong>.
+											Proceedings of the 6th International Workshop on Evolutionary and
+											Reinforcement Learning for Autonomous Robot Systems (ERLARS), 2013.
+											<i><a target="_blank"
+												  href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/Jonschkowski-13-ERLARS-final.pdf">PDF</a>,
+												<a href="https://www.robotics.tu-berlin.de/menue/research/previous/representation_learning/?no_cache=1&tx_sibibtex_pi1%5Bdownload_bibtex_uid%5D=473683&tx_sibibtex_pi1%5Bcontentelement%5D=tt_content%3A613729">BibTeX</a>,
+												(preliminary version, see extended version above)
+											</i></p>
+										<p><i>TL;DR: state representations can be learned from raw sensory input by
+											making these representations consistent with prior knowledge about
+											interactions governed by physics = robotic priors</i></p>
+									</div>
+									<div class="3u$ 12u$(small)" align="center">
+										<span class="image object"><img src="images/2015_ar.png" alt=""/></span>
+									</div>
+								</div>
+							</section>
+							<section id="amazon_picking_challenge">
+								<h2>Amazon Picking Challenge</h2>
+								<div class="row" id="iros16">
+									<div class="0.5u 12u$(small)"><p></p></div>
+									<div class="8u 12u$(small)">
+										<p>Rico Jonschkowski, Clemens Eppner*, Sebastian Höfer*, Roberto Martín-Martín*,
+											and Oliver Brock. <strong>Probabilistic Multi-Class Segmentation for the
+												Amazon Picking Challenge</strong>. IEEE/RSJ International Conference on
+											Intelligent Robots and Systems, 2016.
+											<i><b><a
+													href="http://gitlab.tubit.tu-berlin.de/rbo-lab/rbo-apc-object-segmentation"
+													target="_blank">Code</a></b>,
+												<a target="_blank"
+												   href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/Jonschkowski-16-IROS.pdf">PDF</a>,
+												<a href="https://www.robotics.tu-berlin.de/menue/publications/?no_cache=1&tx_sibibtex_pi1%5Bdownload_bibtex_uid%5D=1211820&tx_sibibtex_pi1%5Bcontentelement%5D=tt_content%3A220700">BibTeX</a>,
+												<strong>IROS Best Paper Award Finalist</strong></i></p>
+										<p><i>TL;DR: in-depth analysis of the object-segmentation method used in our
+											winning entry to the 2015 Amazon picking challenge with lessons that should
+											be useful towards more generic robotic perception</i></p>
+									</div>
+									<div class="3u$ 12u$(small)" align="center">
+										<!--<span class="image object"><img src="images/2016_iros.png" alt=""/></span>-->
+										<iframe width="380" height="220" allowfullscreen="allowfullscreen"
+												mozallowfullscreen="mozallowfullscreen"
+												msallowfullscreen="msallowfullscreen"
+												oallowfullscreen="oallowfullscreen"
+												webkitallowfullscreen="webkitallowfullscreen"
+												src="https://www.youtube.com/embed/Ry6JzeW0HOM">
+										</iframe>
+									</div>
+								</div>
+								<hr class="major"/>
+								<div class="row" id="rss16">
+									<div class="0.5u 12u$(small)"><p></p></div>
+									<div class="8u 12u$(small)">
+										<p>Clemens Eppner*, Sebastian Höfer*, Rico Jonschkowski*, Roberto
+											Martín-Martín*, Arne Sieverling*, Vincent Wall* and Oliver Brock. <strong>Lessons
+												from the Amazon Picking Challenge: Four Aspects of Building Robotic
+												Systems</strong>. Proceedings of Robotics: Science and Systems, 2016.
+											<i><b><a
+													href="http://rss2016.engin.umich.edu/videos/sessions/spotlight_group9.mp4#t=915"
+													target="_blank">Talk</a></b>,
+												<a target="_blank"
+												   href="http://www.redaktion.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/apc_rbo_rss2016_final.pdf">PDF</a>,
+												<a href="https://www.robotics.tu-berlin.de/menue/publications/?no_cache=1&tx_sibibtex_pi1%5Bdownload_bibtex_uid%5D=1188695&tx_sibibtex_pi1%5Bcontentelement%5D=tt_content%3A220700">BibTeX</a>,
+												<strong>RSS Best Systems Paper Award winner</strong></i></p>
+										<p><i>TL;DR: four aspects that improve our exploration and understanding of how
+											to build robotic systems: modularity vs. integration, computation vs.
+											embodiment, planning vs. feedback, generality vs. assumptions</i></p>
+									</div>
+									<div class="3u$ 12u$(small)" align="center">
+										<!--span class="image object"><img src="images/2016_rss.png" alt=""/></span>-->
+										<iframe width="380" height="220" allowfullscreen="allowfullscreen"
+												mozallowfullscreen="mozallowfullscreen"
+												msallowfullscreen="msallowfullscreen"
+												oallowfullscreen="oallowfullscreen"
+												webkitallowfullscreen="webkitallowfullscreen"
+												src="https://www.youtube.com/embed/DuFtwpxQnFI">
+										</iframe>
+									</div>
+								</div>
+							</section>
+							<section id="dissertation">
+								<h1>Dissertation</h1>
+								<p>Rico Jonschkowski. <strong>Learning Robotic Perception Through Prior
+									Knowledge</strong>. Dissertation, Technische Universität Berlin, 2018.
+									<i><a href="https://depositonce.tu-berlin.de/bitstream/11303/7901/4/jonschkowski_rico.pdf">PDF</a></i>
+								</p>
+								<p><i>This dissertation summarizes my pre-2018 work listed above. My committee
+									consisting of Manfred Opper, George Konidaris, Marc Toussaint, and Oliver Brock
+									graded
+									it with <strong>summa cum laude</strong> and the Department for Electrial
+									Engineering and Computer Science at TU Berlin awarded it the
+									<strong>Best Dissertation Prize of the Dr. Wilhelmy-Stiftung</strong>.
+								</i></p>
 
+
+								<!--
+                                <div class="row">
+                                    <div class="0.5u 12u$(medium)"><p></p></div>
+                                    <div class="6u 12u$(medium)">
+                                        <video controls width="512" height="288" poster="http://streamod.cs.brown.edu:8801/H/l/hires.jpg" > <source type="video/mp4" src="http://streamod.cs.brown.edu:8801/H/l/hires.mp4" /> <source type="video/ogg" src="http://streamod.cs.brown.edu:8801/H/l/hires.ogv" /></video>
+                                        <br><b>The things that robots don't need to learn ...</b>, Talk during visit at CSAIL@MIT and HCRI@Brown. June 2016.
+                                    </div>
+                                    <div class="5u$ 12u$(medium)">
+                                        <p><b>​The things that robots don't need to learn ...​</b>
+                                        It is fascinating to observe the current wave of excitement in our community about deep learning. We seem to be tempted to believe that in order to reproduce intelligence in robots, all we need is more data and computation (and maybe a small tweak here and there); that everything there is to learn can be learned from scratch with a "master algorithm" that uses only very weak assumptions. I don't think that this approach is reasonable. There are many things that robots don't need to learn (physics, their own embodiment, the existence of objects, etc.). But how can we specify these "things" that robots don't need to learn and combine them with machine learning to fill in the rest? In this talk, I will summarize insights from our recent ICRA workshop on this topic and present three of our own approaches to this question: 1) representation learning with robotic priors, 2) patterns for learning with side information, and 3) recent results on incorporating structure from robotic methods into neural networks.</p>
+                                    </div>
+                                </div>
+                                -->
+							</section>
+							<section id="curriculum_vitae">
+								<h1>Curriculum Vitae</h1>
+								<dl>
+									<dt>05/2018 - present</dt>
+									<dd>
+										<p>
+											<b>Research scientist at <a
+													href="https://research.google/teams/brain/robotics/"
+													target="_blank">Robotics at Google</a></b>, Mountain View,
+											California.<br>
+										</p>
+									</dd>
+
+									<dt>10/2012 - 05/2018</dt>
+									<dd>
+										<p>
+											<b>Research associate and PhD student at <a
+													href="https://www.robotics.tu-berlin.de/"
+													target="_blank">RBO</a></b>, TU Berlin (Advisor: Oliver Brock).<br>
+											Taught courses: <a href="https://www.youtube.com/watch?v=DNjlAv2cBQ8"
+															   target="_blank">Fundamentals of Robotics</a>, Robotics,
+											Advanced Robotics, Robotics Seminar, Robotics Project, Algorithms and
+											Datastructures.</p>
+										<dl>
+											<dd>
+												<p>
+													05/2018 <b> Dr. rer. nat.</b> (German PhD equivalent, summa cum
+													laude) <br>
+													Thesis: <a
+														href="https://depositonce.tu-berlin.de/bitstream/11303/7901/4/jonschkowski_rico.pdf">Learning
+													Robotic Perception Through Prior Knowledge</a>.
+												</p>
+											</dd>
+											<dd>
+												<p>
+													01/2017 - 04/2017 <b>PhD Intern at <a href="https://deepmind.com/"
+																						  target="_blank">DeepMind</a></b>,
+													London.
+												</p>
+											</dd>
+										</dl>
+										</p>
+									</dd>
+
+									<dt>10/2007 - 09/2012</dt>
+									<dd>
+										<p>
+											<b>Study of computer science</b> at FU Berlin.
+										</p>
+										<dl>
+											<dd>
+												<p>
+													09/2012 <b>Master of Science</b> (grade: 1.0, major: robotics/AI,
+													minor: psychology).<br>
+													Thesis: New Approaches to Temporal Abstraction in Hierarchical
+													Reinforcement Learning.
+												</p>
+											</dd>
+											<dd>
+												<p>
+													01/2012 - 09/2012 <b>Research assistant at <a
+														href="http://www.marc-toussaint.net" target="_blank">MLR</a></b>,
+													FU Berlin (Advisor: Marc Toussaint).
+												</p>
+											</dd>
+											<dd>
+												<p>
+													2011 <a href="https://www.youtube.com/watch?v=iX_Lmb5ORrs"
+															target="_blank">Study abroad</a> at UNSW, Sydney.
+												</p>
+											</dd>
+											<dd>
+												<p>
+													10/2009 - 09/2011 <b>Teaching assistant</b> at FU Berlin.<br>
+													Taught courses: Functional Programming, Object-Oriented Programming,
+													Computer Science and Society, Software Engineering
+												</p>
+											</dd>
+											<dd>
+												<p>
+													01/2011 <b>Bachelor of Science</b> (grade: 1.4, major: computer
+													science, minor: philosophy).<br>
+													Thesis: Control of autonomous humanoid soccer robots with XABSL.
+												</p>
+											</dd>
+											<dd>
+												<p>
+													2008 - 2011 Member of <b>RoboCup</b> team <a
+														href="https://www.youtube.com/watch?v=-9dhsJoRpd8"
+														target="_blank">FUmanoids</a> (Advisor: Raul Rojas).
+												</p>
+											</dd>
+										</dl>
+									</dd>
+								</dl>
+
+								<h2>Awards, Prizes, Scholarships</h2>
+
+								<p>
+									<b>2018 Prize from the Dr. Wilhelmy-Stiftung for the best dissertation in electrial
+										engineering and computer science at TU Berlin.</b>
+								</p>
+
+								<p>
+									<b>2017 Paper Award winner at New Frontiers for Deep Learning in Robotics Workshop
+										at RSS</b><br>
+									Rico Jonschkowski, Roland Hafner, Jonathan Scholz, and Martin Riedmiller. PVEs:
+									Position-Velocity Encoders for Unsupervised Learning of Structured State
+									Representations. New Frontiers for Deep Learning in Robotics Workshop at RSS,
+									2017.<br>
+								</p>
+
+								<p>
+									<b>2016 Best Paper Award finalist at IROS</b><br>
+									Rico Jonschkowski, Clemens Eppner, Sebastian Höfer, Roberto Martín-Martín, and
+									Oliver Brock. Probabilistic Multi-Class Segmentation for the Amazon Picking
+									Challenge. IEEE/RSJ International Conference on Intelligent Robots and Systems
+									(IROS), 2016.<br>
+								</p>
+
+								<p>
+									<b>2016 Best Systems Paper Award winner at RSS</b><br>
+									Clemens Eppner, Sebastian Höfer, Rico Jonschkowski, Roberto Martín-Martín, Arne
+									Sieverling, Vincent Wall, and Oliver Brock. Lessons from the Amazon Picking
+									Challenge: Four Aspects of Building Robotic Systems. Robotics: Science and Systems
+									(RSS), 2016.<br>
+								</p>
+								<p>
+									<b>2015 Winner of the <a href="http://fast.wistia.net/embed/iframe/h4eel3ks0v"
+															 target="_blank">Amazon Picking Challenge</a> at ICRA15.</b>
+								</p>
+								<p><b>2015 AAAI-15 Robotics Fellowship</b></p>
+								<p><b>2011 PROMOS scholarship from FU Berlin</b></p>
+								<p><b>2011 <a href="https://www.youtube.com/watch?v=-9dhsJoRpd8" target="_blank">4th
+									place RoboCup Worldcup</a></b>, 2nd place RoboCup German Open,
+									1st place Technical Challenge @ RoboCup German Open, 1st place RoboCup Iran Open</p>
+								<p><b>2010 2nd place RoboCup Worldcup</b>, 1st place Technical Challenge @ RoboCup
+									Worldcup, 1st place RoboCup Iran Open</p>
+								<p><b>2008 2nd place RoboCup German Open</b></p>
+								<p><b>2007 1st place <a href="https://www.youtube.com/watch?v=HU6oiP9UVn8"
+														target="_blank">RoboCup Junior</a> German Open</b></p>
+
+								<h2>Organized Events</h2>
+
+								<p><b>Nature vs. Nurture in Robotics (ICRA16 Workshop)</b><br>
+									<i><a href="http://mobilemanipulation.org/nvsn/index.php/schedule.html"
+										  target="_blank">Slides</a>, <a
+											href="https://docs.google.com/document/d/1Tfsy9lx7iFroGDVR95gQC5tpjDgQbjoBeEFXRM-Gbk0/edit?usp=sharing"
+											target="_blank">Transcript of a radio interview</a></i>
+								</p>
+							</section>
 						</div>
 					</div>
 			</div>

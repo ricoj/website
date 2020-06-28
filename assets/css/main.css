@@ -2147,7 +2147,7 @@
 		}
 
 	h1 {
-		font-size: 4em;
+		font-size: 3.5em;
 		margin: 0 0 0.5em 0;
 		line-height: 1.3;
 	}
@@ -2175,7 +2175,7 @@
 	@media screen and (max-width: 1680px) {
 
 		h1 {
-			font-size: 3.5em;
+			font-size: 2.75em;
 		}
 
 	}
@@ -2183,7 +2183,7 @@
 	@media screen and (max-width: 980px) {
 
 		h1 {
-			font-size: 3.25em;
+			font-size: 2.5em;
 		}
 
 	}
@@ -2274,11 +2274,11 @@
 
 	header p {
 		font-family: "Roboto Slab", serif;
-		font-size: 1em;
+		font-size: 1.5em;
 		font-weight: 400;
-		letter-spacing: 0.075em;
+		/* letter-spacing: 0.075em;*/
 		margin-top: -0.5em;
-		text-transform: uppercase;
+		/*text-transform: uppercase;*/
 	}
 
 	header.major > :last-child {
@@ -3887,6 +3887,7 @@
 
 			#banner .image img {
 				height: 100%;
+				min-height: 100%;
 				-moz-object-fit: cover;
 				-webkit-object-fit: cover;
 				-ms-object-fit: cover;
@@ -3896,6 +3897,7 @@
 				-ms-object-position: center;
 				object-position: center;
 				width: 100%;
+				min-width: 100%;
 			}
 
 		@media screen and (orientation: portrait) {
